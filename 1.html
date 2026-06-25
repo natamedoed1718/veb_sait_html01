@@ -1,17 +1,90 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8"> <!--Кодировка страницы! -->
     <meta name="viewport" content="width=device-width, initial-scale=1">  <!--Адаптивность, чтобы на всех устройствах одинаково выглядел интерфейс! -->
-    <title>Заголовок страницы</title>  <!--Заголовок! -->
+    <title> Главная </title>  <!--Заголовок! -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      h6{
+         color:gray;
+      }
+    </style>
   </head>
   <body> <!--Тело страницы! -->
-  <h1>Заголовок</h1> <!--Заголовок па странице! -->
-  <!--Ссылка! -->
-  <!--Изображение! -->
-  <!--Форма со сбором имени и почты! -->
-  <!--Список с перечислением! -->
-  <!--Таблица с данными! -->
+  <!-- НАВИГАЦИОННОЕ МЕНЮ -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Левая колонка с меню -->
+        <div class="col-3 bg-light  d-flex flex-column" >
+          <h2>Меню</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Категории</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Заказы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="nav flex-column" style="margin-top: auto;">
+      </ul>
+          <div class="d-flex flex-column btn-group dropup">
+           <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+           Пользователь
+           </button>
+             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Профиль</a></li>
+              <li><a class="dropdown-item" href="#">Выход</a></li>
+             </ul>
+         </div>
+        </div>
+        <div class="col-9 bg-light vh-100">
+          <h1 class="text-center">Главная</h1> <!--Заголовок па странице! -->
+          <h6 class="text-center">Вы находитесь на сайте, предназначенном для продажи товаров.</h6>
+          <br>
+          <div class="row">
+            <div class="col-4 bg-light vh-100">
+              <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="text-center card-title">Товар 1</h5>
+    <h3 class="text-center card-subtitle mb-2 ">100$</h3>
+    <p class="text-center card-text">10 users included, 2GB of storage, Email support, Help center access</p>
+    <p class="text-center"> <button href="#" class=" btn btn-primary ">Купить</button> </p>
+  </div>
+</div>
+              </div>
+              <div class="col-4 bg-light vh-100">
+                <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="text-center card-title">Товар 1</h5>
+    <h3 class="text-center card-subtitle mb-2 ">100$</h3>
+    <p class="text-center card-text">10 users included, 2GB of storage, Email support, Help center access</p>
+    <p class="text-center"> <button href="#" class=" btn btn-primary ">Купить</button> </p>
+  </div>
+</div>
+                </div>
+                <div class="col-4 bg-light vh-100">
+                  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="text-center card-title">Товар 1</h5>
+    <h3 class="text-center card-subtitle mb-2 ">100$</h3>
+    <p class="text-center card-text">10 users included, 2GB of storage, Email support, Help center access</p>
+    <p class="text-center"> <button href="#" class=" btn btn-primary ">Купить</button> </p>
+  </div>
+</div>
+                  </div>
+              </div>
+             </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"> </script>
   </body>
 </html>
