@@ -7,6 +7,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         h6 { color: gray; }
+
+        /* ===== ТЕМНОЕ МЕНЮ ===== */
+        .col-3.bg-light {
+            background-color: #2c3e50 !important;
+            color: white;
+        }
+
+        .col-3.bg-light h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .col-3.bg-light .nav-link {
+            color: #ecf0f1 !important;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .col-3.bg-light .nav-link.active {
+            background-color: #34495e !important;
+            color: white !important;
+        }
+
+        .col-3.bg-light .nav-link:hover {
+            background-color: #34495e !important;
+            color: white !important;
+        }
+
+        .col-3.bg-light .btn-secondary {
+            background-color: #34495e !important;
+            border-color: #34495e !important;
+            color: white !important;
+        }
+
+        .col-3.bg-light .btn-secondary:hover {
+            background-color: #3d566e !important;
+        }
+
+        .col-3.bg-light .dropdown-menu {
+            background-color: #34495e;
+            border: none;
+        }
+
+        .col-3.bg-light .dropdown-item {
+            color: #ecf0f1;
+        }
+
+        .col-3.bg-light .dropdown-item:hover {
+            background-color: #3d566e;
+            color: white;
+        }
+        /* ===== КОНЕЦ ТЕМНОГО МЕНЮ ===== */
+
+        /* Стили для карточек */
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 <body>
@@ -18,10 +83,10 @@
         <div class="col-3 bg-light vh-100 d-flex flex-column p-3">
             <h2>Меню</h2>
             <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Категории</a></li>
+                <li class="nav-item"><a class="nav-link active" href="glavnaya.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="katalog.html">Категории</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Заказы</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontakty.html">Контакты</a></li>
             </ul>
 
             <!-- Кнопка пользователя внизу -->
@@ -50,8 +115,8 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="text-center">Товар 1</h5>
-                        <h3 class="text-center">100$</h3>
-                        <p class="text-center">10 users included, 2GB of storage, Email support, Help center access</p>
+                        <h3 class="text-center">$100</h3>
+                        <p class="text-center">10 users included, 2 GB of storage,<br>Email support, Help center access</p>
                         <div class="text-center">
                             <a href="#" class="btn btn-primary">Купить</a>
                         </div>
@@ -61,8 +126,8 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="text-center">Товар 1</h5>
-                        <h3 class="text-center">100$</h3>
-                        <p class="text-center">10 users included, 2GB of storage, Email support, Help center access</p>
+                        <h3 class="text-center">$100</h3>
+                        <p class="text-center">10 users included, 2 GB of storage,<br>Email support, Help center access</p>
                         <div class="text-center">
                             <a href="#" class="btn btn-primary">Купить</a>
                         </div>
@@ -72,8 +137,8 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="text-center">Товар 1</h5>
-                        <h3 class="text-center">100$</h3>
-                        <p class="text-center">10 users included, 2GB of storage, Email support, Help center access</p>
+                        <h3 class="text-center">$100</h3>
+                        <p class="text-center">10 users included, 2 GB of storage,<br>Email support, Help center access</p>
                         <div class="text-center">
                             <a href="#" class="btn btn-primary">Купить</a>
                         </div>
